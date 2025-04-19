@@ -1,0 +1,1101 @@
+
+    *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+        
+
+        }
+          .nav label #toggle, .nav label #cross, #check{
+    display: none;
+}
+        .nav{
+            width: 100%;
+            height: 70px;
+        z-index: 1;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 10px;
+            box-shadow: 1px 1px 10px black;
+        }
+        .navimg{
+
+            width: 5% ;
+            height: 50px;
+            border: 1px solid transparent   ;
+            background: url(../img/logo.png);
+            background-position: center;
+            background-size: 103% 103%;
+            margin-left: 20px;
+        }
+        .nav ul{
+            display: flex;
+            flex-wrap: wrap;
+            list-style-type: none;
+            color: black;
+            align-self: center;
+            margin-right: 80px;
+
+
+
+        }
+        .nav a{
+            text-decoration: none;
+            line-height: 50px;
+
+        }
+        .nav ul li{
+            margin-right: 40px;
+            font-size: 25px;
+        }
+        .home{
+            width: 100wh;
+/*            height: 670px;*/
+            border: 1px solid transparent;
+/*          position: relative;*/
+/*            top: 70px;*/
+            margin-top: 70px;
+            background: url(../img/hero-bg.jpg);
+            display: flex;
+            flex-wrap: wrap;
+
+            
+
+        }
+        .text{
+            width: 50%;
+           display: flex;
+           justify-content: flex-end;
+           align-items: center;
+            border: 1px solid  transparent ;
+/*          position: relative;*/
+            
+        }
+        .content{
+            width: 79%;
+/*            height: 400px;*/
+/*            align-items: flex-end;*/
+            border-right: 2px solid goldenrod;
+/*          margin:100px auto ;*/
+            font-size: 20px ;
+        }
+        .dogimg{
+            width: 50%;
+            border: 1px solid transparent ;
+            background: url(../img/hero-bg2.png);
+            background-size: 100% ;
+            background-repeat:no-repeat ;
+            overflow: hidden;
+        }
+        .dogimg img{
+            width: 80%;
+            height: 80%;
+            margin: 120px auto ;
+            align-items: left;
+        }
+        .drool{
+            font-size: 50px;
+        }
+        .pet{
+            font-size: 50px;
+            color: gold;
+        }
+        .lorem{
+            margin-top: 30px;
+        }
+        .button{
+            width: 80%;
+            height: 50px;
+            border: 1px solid transparent;
+            margin-top: 30px ;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .readmore{
+            width: 45%;
+            height: 50px;
+            border: 1px solid navy;
+            background: navy;
+            color: white;
+            text-align: center;
+            line-height: 50px;
+        }
+        .readmore:hover{
+            background: white;
+            color: navy;
+        }
+       .contact{
+            width: 45%;
+            height: 50px;
+            border: 1px solid gold;
+            background: gold;
+            color: white;
+            text-align: center;
+            line-height: 50px;
+        }
+        .contact:hover{
+            background: white;
+            color: navy;
+        }
+        .aboutus{
+            width: 100%;
+/*            height: 500px;*/
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .dogicon{
+            width: 50px;
+            height: 50px;
+            border: 1px solid transparent ;
+            background: url(../img/heading-img.png);
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-top: 150px ;
+            
+
+        }
+        .about{
+            font-size: 40px;
+            
+        }   
+        .aboutp{
+            color: gray;
+            font-size: 20px;
+            text-align: center;
+            margin: 10px   100px;
+        }
+        .readmore1{
+            
+        color: gold;
+        font-size: 25px;
+        margin-bottom: 120px;
+       }
+       .animation {
+        width: 100%;
+/*        height: 90vh;*/
+
+        background: url(../img/animal-bg.jpg);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+       }
+       .animation .box{
+        width: 20%;
+        height: 400px;
+        margin-top: 100px;
+        border: 1px solid transparent;
+/*        display: inline-block;*/
+        text-align: center;
+/*        margin-top: 150px;*/
+        color: white;
+
+
+
+       }
+       .box img{
+        width: 80%;
+        box-shadow: 0px 0px 10px 1px black;
+        border-radius: 20px;
+        margin-bottom: 20px;
+       }
+       .boxp{
+        width: 80%;
+        height: 70px;
+        border: 1px solid transparent;
+        margin  :20px auto ;
+
+       }
+       .box p{
+
+        border: 1px solid transparent;
+        font-size: 16px;
+
+       }
+       .animation .dog, .animation .fish{
+            animation: upper 3s linear infinite;
+       }
+       @keyframes upper{
+        0%{
+            transform: translateY(0px);
+        }
+        25%{
+            transform: translateY(50px);
+
+        }
+        50%{
+            transform: translateY(0px);
+        }
+        75%{
+            transform: translateY(-50px);
+        }
+        100%{
+            transform: translateY(0px);
+        }
+
+       }
+       .animation .bird, .animation .cat{
+            animation: lower 3s linear infinite;
+       }
+       @keyframes lower{
+        0%{
+            transform: translateY(0px);
+        }
+        25%{
+            transform: translateY(-50px);
+
+        }
+        50%{
+            transform: translateY(0px);
+        }
+        75%{
+            transform: translateY(50px);
+        }
+        100%{
+            transform: translateY(0px);
+        }
+
+       }
+       .maincaring{
+        width: 100%;
+/*        height: 90vh;*/
+margin-top: 100px;
+margin-bottom: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        
+
+       }
+       .dogbath{
+        width: 49%;
+        height: 500px;
+
+        border: 1px solid transparent;
+        
+        background: url(../img/pet-bg.png);
+        background-repeat: no-repeat;
+        background-size: 55%;
+
+       }
+    
+       
+       .dogbathimg{
+        width: 60%;
+        border: 1px solid transparent;
+/*        transform: translate(155px,0);*/
+margin: 0 auto;
+       }
+       .dogbathimg img{
+        width: 100%;
+       }
+       .caringtext{
+        width: 49%;
+        height: 500px;
+      
+        border: 1px solid  transparent;
+        
+       }
+       .carecontent{
+        width: 80%;
+        height: 300px;
+        border: 1px solid transparent;
+        margin: 100px auto;
+       }
+       .caredogimg{
+        width: 50px;
+        height: 50px;
+        border: 1px solid transparent;
+        background: url(../img/heading-img.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 10px;
+       }
+       .carecontent h1{
+        font-size: 40px;
+       }
+       .carecontent p{
+        font-size: 20px;
+        margin-top: 10px;
+       }
+       .carereadbutton{
+        font-size: 20px;
+        margin-top: 10px;
+        color: goldenrod;
+       }
+       .choose{
+        width: 100%;
+
+       }
+       .choose1{
+        width: 85%;
+        margin: 0 auto;
+        height: 200px;
+        border: 1px solid transparent;
+       }
+       .chooseimg{
+        width: 50px;
+        height: 50px;
+        margin-top: 50px;
+        background: url(../img/heading-img.png);
+        background-repeat: no-repeat;
+        background-position: center;
+       }
+       .choose1 h1{
+        font-size: 40px;
+        margin-top: 10px;
+
+       }
+       .choose1 p{
+        font-size: 20px;
+        margin-top: 10px;
+
+       }
+
+     .choose2{
+        width: 100%;
+/*        height: 400px;*/
+        border: 1px solid transparent;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+       }
+       .dd{
+        width: 30%;
+        height: 300px;
+        border: 1px solid transparent;
+       }
+       .choosedog1{
+        background: url(../img/pet1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+       }
+       .choosedog2{
+        background: url(../img/pet2.png);
+        background-repeat: no-repeat;
+        background-position: center;
+/*        background-size:100% ;*/
+
+       }
+       .choosedog3{
+        background: url(../img/pet2.png);
+        background-repeat: no-repeat;
+        background-position: center;
+/*        background-size:100% ;*/
+
+       }
+       .choose3{
+        width: 100%;
+/*        height: 500px;*/
+        border: 1px solid  transparent;
+       }
+       .circle{
+        width: 100%;
+/*        height: 300px;*/
+        border: 1px solid transparent;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+       }
+       .cc{
+        width: 30%;
+        height: 250px;
+        border: 1px solid transparent;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+       }
+       .cc h4{
+        margin-bottom: -30px;
+       }
+       .circle1{
+        background: url(../img/omega.png);
+        background-repeat: no-repeat;
+        background-position: center;
+       }
+       .circle2{
+        background: url(../img/dog.png);
+        background-repeat: no-repeat;
+        background-position: center;
+       }
+       .circle3{
+        background: url(../img/shield.png);
+        background-repeat: no-repeat;
+        background-position: center;
+       }
+       .circleread{
+        width: 100%;
+        height: 200px;
+        border: 1px solid transparent;
+       }
+       .readmore2{
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        border: 1px solid transparent;
+        margin: 100px auto;
+        color: gold;
+       }
+       .carereadbutton a{
+        text-decoration: none;
+        color: gold;
+       }
+       .readmore1 a{
+        text-decoration: none;
+        color: gold;
+       }
+       .readmore2 a{
+        text-decoration: none;
+        color: gold;
+       }
+       .food{
+        width: 100%;
+/*        height: 100vh;*/
+        background: #151B54;
+
+       }
+       .foodtext{
+        width: 80%;
+        height: 300px;
+        margin: 0 auto;
+        text-align: center;
+        border: 1px solid transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-end;
+        align-items: center;
+       }
+       .fooddog{
+        width: 50px;
+        height: 50px;
+        background: url(../img/heading-img.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 10px;
+       }
+       .foodtext h1{
+        font-size: 30px;
+        color: white;
+        margin-bottom: 10px;
+       }
+       .foodtext p{
+        font-size: 20px;
+        color: white;
+        margin-bottom:50px ;
+       }
+       .foodpacket{
+        width: 100%;
+/*        height: 90vh;*/
+        border: 1px solid transparent;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+       }
+       
+       .packet1{
+        width:25% ;
+        height: 550px;
+/*        border: 2px solid red;*/
+
+       }
+       .packet2{
+        width:25% ;
+        height: 600;
+
+        margin-top: 50px;
+       }
+       .pp img{
+        width: 100%;
+        height: 100%;
+       }
+       .packet3{
+        width:28% ;
+        height: 350px;
+        
+
+
+         align-self: center;
+         margin-top: 250px;
+
+       }
+       .space{
+        width: 100%;
+        height: 200px;
+       }
+       .buynow{
+        width: 100%;
+        border: 1px solid transparent;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+       }
+       .bb{
+        width: 30%;
+        height:300px ;
+        border: 1px solid transparent;
+        margin: 10px auto ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: gold;
+       }
+       .bb a{
+        width: 40%;
+        height: 40px;
+        border: 1px solid  #151B54;
+        background:  #151B54;
+        text-align: center;
+        line-height: 40px;
+        color: gold;
+        text-decoration:none ;
+        font-size: 20px;
+       }
+       .dolar{
+          width: 50%;
+          height: 40px;
+          border: 1px solid transparent;
+          display: flex;
+          justify-content: center;
+       }
+       .bb .h1{
+/*        display: inline-block;*/
+        font-size: 30px;
+        font-weight: bold;
+        color:  #151B54;
+       }
+       .bb .h2{
+/*        display: inline-block;*/
+        font-size: 30px;
+        font-weight: bold;
+       }
+      .customer{
+        width: 100%;
+/*        height: 100vh;*/
+        border: 1px solid transparent;
+        background: url(../img/client-bg.jpg) ;
+      }
+
+     .customer1{
+        width: 85%;
+        margin: 50px auto;
+        height: 220px;
+        border: 1px solid transparent;
+       }
+       .customerimg{
+        width: 50px;
+        height: 50px;
+        margin-top: 50px;
+        background: url(../img/heading-img.png);
+        background-repeat: no-repeat;
+        background-position: center;
+       }
+       .customer1 h1{
+        font-size: 30px;
+
+
+       }
+       .customer1 p{
+        font-size: 20px;
+        margin-top: 10px;
+
+       }
+       .jack{
+            width: 90%;
+            margin:0 auto ;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            border: 1px solid transparent;
+
+       }
+       .jackimgborder{
+            width: 23%;
+            height: 300px;
+            border: 1px solid transparent;
+       }
+       .jacktext{
+        width: 30%;
+        height: 300px;
+        border: 1px solid transparent;
+       }
+       .jackslide{
+        width: 10%;
+        height: 300px;
+        border: 1px solid transparent;
+        text-align: center;
+        line-height: 300px;
+       }
+       .jackimg{
+        width: 100%;
+        height: 100%;
+/*        background: url(../img/client.png);*/
+        background-repeat: no-repeat;
+        background-position: center;
+/*        background-size:  contain;*/
+       }
+       .jackimg img{
+        width: 90%;
+        height: 80%;
+        margin: 15px;
+       }
+       .jacktext .p{
+        font-size: 25px;
+        color: black;
+       }
+       .jacktext p{
+        font-size: 19px;
+        color: gray;
+        margin-top: 10px;
+       }
+       .comma{
+        width: 40px;
+        height: 40px;
+        border: 1px solid transparent;
+        background: url(../img/quote.png);
+        background-repeat: no-repeat;
+        background-position: center;
+
+       }
+       .btn .a{
+           display: inline-block;
+           width: 50px;
+           height: 50px;
+           background: goldenrod;
+           border-radius: 50%;
+           text-align: center;
+           line-height: 50px;
+       }
+       .a a{
+        
+        border: 20px solid transparent;
+        border-radius: 50%;
+        color: white;
+       }
+       .callback{
+        width: 100%;
+        border: 1px solid transparent;
+       }
+
+       .callspace{
+        width: 100%;
+        height: 150px;
+        border: 1px solid transparent;
+       }
+       .callback   {
+        width: 100%;
+        
+        border: 1px solid transparent;
+        margin-bottom: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+       }
+       .callbackcontent{
+        width: 40%;
+        height: 800px;
+        border: 1px solid transparent ;
+       }
+       .calltext{
+        width: 100%;
+        height: 170px;
+        border: 1px solid transparent;
+       }
+       .calldog{
+         width: 50px;
+        height: 50px;
+        background: url(../img/heading-img.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        
+
+       }
+        .calltext h1{
+        font-size: 35px;
+        margin-bottom: 10px;
+       }
+       .calltext p{
+        font-size: 19px;
+        color: gray;
+/*        margin-bottom:50px ;*/
+       }
+       .callform{
+        width: 100%;
+        height: 64vh;
+        border: 1px solid transparent;
+       }
+       input{
+        width: 100%;
+        height: 70px;
+        background: lightgrey;
+        outline: none;
+        border: none;
+        font-size: 20px;
+
+       }
+
+       .msg{
+        height: 120px;
+       }
+       .abc{
+        width: 100%;
+        height: 100px;
+        border: 1px solid transparent;
+        text-align: center;
+       }
+       
+       .aaa{
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        width: 150px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        font-size: 20px;
+        background: gold;
+        margin-top: 10px;
+       }
+       iframe{
+        width: 100%;
+        height: 100%;
+        background: lightgrey;
+       }
+
+
+       .map{
+        width: 40%;
+        height: 95vh;
+        border: 1px solid transparent;
+       }
+       .info{
+        width: 100%;
+/*        height: 50vh;*/
+/*        border: 1px solid transparent;*/
+
+       }
+       .contactinfo{
+        width: 100%;
+/*        height: 300px;*/
+        background: #151B54;
+        border: 1px solid transparent ;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        align-items: center;
+       }
+       .templet{
+        width: 100%;
+/*        height: 80px;*/
+      padding: 20px ;
+        background:gold;
+        border: 1px solid transparent ;
+       }
+       .inf{
+        width: 20%;
+        height: 200px;
+        border: 1px solid  transparent  ;
+        text-align: ;
+        line-height: 30px;
+        color: white;
+        margin-top: 100px;
+        margin-bottom:100px ;
+       }
+       .infoinput{
+        background: white;
+        width: 60%;
+        height: 40px;
+        margin-top: 10px;
+        font-size: 18px;
+       }
+       .info4 a{
+        display: inline-block;
+        width: 60%;
+        height: 40px;
+        margin-top: 10px;
+        background: gold;
+        text-decoration: none;
+        text-align: center;
+        line-height: 40px;
+        color: black;
+        font-size: 20px;
+        border: 1px solid gold;
+       }
+       .info4 a:hover{
+        background: none;
+        color: gold;
+       }
+       .info1 p{
+        font-size: 20px;
+        display: inline-block;
+
+       }
+       .info2 h4{
+        font-size: 18px;
+       }
+       .mail{
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        background: url(../img/mail.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-right: 10px;
+       }
+       .calling{
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        background: url(../img/call.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-right: 10px;
+       }
+       .media{
+        width: 70%;
+        height: 70px;
+        display: flex;
+        border: 1px solid transparent;
+        justify-content: space-around;
+        align-items: center;
+       }
+       .mda{
+        width: 40px;
+        height: 40px;
+        border: 1px solid white;
+        border-radius: 50%;
+/*        background-repeat: no-repeat;*/
+/*        background-position: left;*/
+/*background-size: 100% 100%;*/
+       }
+       .mda img{
+        width: 100%;
+       }
+       .templet p{
+        text-align: center;
+/*        line-height: 70px;*/
+        font-size: 20px;
+        color: white;
+       }
+     
+       @media (max-width:1122px) and (min-width:767px){
+        
+            .content{
+                width: 100%;
+            }
+            .dogbath{
+                background-size: 100%;
+            }
+            .dogbathimg{
+                width: 80%;
+            }
+            .carecontent {
+                margin-left: 80px;
+            }
+            .carecontent h1{
+        font-size: 25px;
+       }
+       .carecontent p{
+        font-size: 15px;
+        margin-top: 10px;
+       }
+       .choose1 h1{
+        font-size: 30px;
+        margin-top: 10px;
+
+       }
+       .choose1 p{
+        font-size: 18px;
+        margin-top: 10px;
+
+       }
+       .dd{
+        width: 28%;
+        height: 280;
+        border: 1px solid transparent;
+        background-size:100% ;
+
+       }
+       .cc{
+        width: 30%;
+        height: 200px;
+        border: 1px solid transparent;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+       }
+       .packet1,.packet2,.packet3{
+        background-size: 100% 80%;
+       }
+       .packet1{
+        width: 30%;
+       }
+       .packet2{
+        width: 30%;
+       }
+       .packet3{
+        width: 35%;
+       }
+       .bb a{
+        width: 60%;
+       }
+       .jack{
+            width: 100%;
+            margin:0 auto ;
+            display: flex;
+            
+
+       }
+       .jackimg img{
+        width: 90%;
+        height: 80%;
+        margin: 15px;
+       }
+       .jackimgborder{
+            width: 30%;
+            height: 200px;
+           
+       }
+       .jacktext{
+        width: 60%;
+        height: 200px;
+        
+       }
+       .jackslide{
+        width: 15%;
+        height: 200px;
+        
+        text-align: center;
+        line-height: 200px;
+       }
+        .callback   {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: space-around;
+        
+       }
+       .callbackcontent{
+        width: 45%;
+        height: 95vh;
+        border: 1px solid transparent;
+       }
+        .calltext h1{
+        font-size: 30px;
+        margin-bottom: 10px;
+       }
+       .calltext p{
+        font-size: 17px;
+        color: gray;
+/*        margin-bottom:50px ;*/
+       }
+       .map{
+        width: 45%;
+        height: 95vh;
+        border: 1px solid transparent;
+       }
+        input{
+        width: 100%;
+        height: 60px;
+       }
+       .msg{
+        height: 100px;
+       }
+        .callback {
+            margin-bottom: 50px;
+        }
+        .inf{
+        width: 23%;
+        height: 22vh;
+        border: 1px solid transparent   ;
+        text-align: ;
+        line-height: 30px;
+        color: white;
+       }
+       .info4 a{
+        width: 80%;
+       }
+        .infoinput{
+        background: white;
+        width: 80%;
+        height: 40px;
+        
+        font-size: 17px;
+       }
+       .info1 p{
+        font-size: 18px;
+        
+
+       }
+       .info1 h2{
+        font-size: 20px;
+       }
+       .info2 h4{
+        font-size: 16px;
+       }
+       .info2 h3{
+        font-size: 18px;
+       }
+       .info2 h2{
+        font-size: 20px;
+       }
+       .media{
+        width: 100%;
+    }
+    .info3 h2{
+        font-size: 20px;
+    }
+    .info4 h2{
+        font-size: 20px;
+    }
+   
+       
+}
+
+
+
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

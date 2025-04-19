@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<title>Website</title>
+    <style type="text/css">
+        @media(max-width:766px){
+     .nav ul{
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        background: gold;
+        display: block;
+        text-align: center;
+
+        transition: all 0.3s linear;
+        z-index: ;
+    }
+    .nav label #toggle{
+        display: block;
+        line-height: 70px;
+        margin-left: 200px;
+
+    }
+    .nav a{
+        font-size: 40px;
+    }
+    .nav li{
+        margin-top: 30px;
+        color: white;
+
+        
+    }.nav label{
+    position: relative;
+    left: 100px;top: -7px;
+}
+#check{
+    display:none;
+    position: relative;
+    top: 10px;
+    left: 0;
+    width: 5px;
+    height: 10px;
+    border: 1px solid;
+}
+.nav label{
+    font-size: 40px;
+    line-height: 70px;
+    color: ;
+}
+     .nav label #toggle{
+    display: inline-block;
+}
+    .nav #check:checked ~ a ul{
+        left: 0;
+    }
+    .nav #check:checked ~ label #toggle{
+        display: none;
+    }
+    .nav #check:checked ~ label #cross{
+        display: inline-block;
+    }
+
+    .navimg{
+        width: 15%;
+    }
+    .nav{
+            width: 100%;
+            height: 70px;
+        z-index: 1;
+            position: relative;
+            top: 0;
+            left: 0;
+            
+        }
+        .home{
+            margin-top: 0;
+        }
+        .text{
+            width: 90%;
+            margin: 0 auto;
+        }
+        .content{
+            border: none;
+            margin: 50px auto;
+            text-align: center;
+        }
+        .content h1{
+            font-size: 35px;
+        }
+        .content p{
+            font-size: 17px;
+        }
+        .readmore, .contact{
+            width: 90%;
+        }
+        .button{
+            width: 100%;
+            height: 120px;
+            border: 1px solid transparent;
+            margin-top: 30px ;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .dogimg{
+            width: 100%;
+            background: none;
+        }
+        .aboutp{
+            color: gray;
+            font-size: 17px;
+            text-align: ;
+            margin: 10px   5px;
+        }
+        .animation {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .animation .dog, .animation .fish{
+            animation: none;
+       }
+       .animation .bird, .animation .cat{
+            animation: none;
+       }
+       .animation .box{
+        width: 80%;
+        height: 300px;
+        margin-top:50px  ;
+        margin-bottom: 50px;
+    }
+     .dogbath{
+        width: 100%;
+        background-size: 100%;
+        height: 250px;
+        margin-top: -50px;
+            }
+            .caringtext{
+        width: 100%;
+        height: 500px;
+    }
+         .carecontent{
+        width: 95%;
+        height: 300px;
+        border: 1px solid transparent;
+        margin: 30px auto;
+       }
+       .choose1{
+        width: 85%;
+        margin: 0 auto;
+        height: 200px;
+        border: 1px solid transparent;
+        text-align: center;
+       }
+       .choose{
+        margin-top: -100px;
+        
+       }
+       .choose1 h1{
+        font-size: 30px;
+       }
+       .chooseimg{
+        margin: -15px auto   ;
+            }
+            .choose2{
+        width: 100%;
+/*        border: 1px solid;*/
+        
+    }
+     .choosedog1{
+/*        margin-top: 200px;*/
+     }
+            .dd{
+        width: 100%;
+        margin-bottom: 330px;
+    }
+    .circle{
+        margin-top: -1850px;
+    }
+    
+    .cc{
+        width: 100%;
+        height: 250px;
+        border: 1px solid transparent;
+        display: flex;
+        margin-top:330px ;
+
+        justify-content: center;
+        align-items: flex-end;
+       }
+       .foodtext h1{
+        font-size: 35px;
+        color: white;
+        margin-bottom: 10px;
+       }
+       .pp{
+        width: 80%;
+        margin-bottom: 150px;
+/*        margin: 0 auto;*/
+       }
+       .space{
+        width: 100%;
+        height: 0px;
+       }
+       .buynow{
+        margin-top: -2000px;
+       }
+       .bb{
+        width: 100%;
+        height:300px ;
+        border: 1px solid transparent;
+        margin-top:450px  ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: gold;
+       }
+       .customer1{
+        width: 85%;
+        text-align: center;
+        margin: 50px auto;
+        height: 220px;
+        border: 1px solid transparent;
+       }
+       .customerimg{
+        
+        margin: 0px auto;
+        
+       }
+       .customer1 h1{
+        font-size: 40px;
+
+
+       }
+       .jackimgborder{
+            width: 80%;
+            
+       }
+        .jacktext{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+       }
+       .jackslide{
+        width: 80%;
+        margin: -80px;
+     
+       }
+       .calldog{
+        margin: 0 auto;
+       }
+        .callbackcontent{
+        width: 100%;
+        height: 800px;
+        border: 1px solid transparent;
+       }
+       .aaa{
+        margin-top: 100px;
+
+       }
+       .map{
+        width: 100%;
+       }
+       .inf{
+        width: 60%;
+        height: 200px;
+        border: 1px solid  transparent  ;
+        text-align: ;
+        line-height: 30px;
+        color: white;
+        margin-top: 10px;
+        margin-bottom:10px ;
+       }
+       .info4 a{
+        display: inline-block;
+        width: 100%;
+            }
+            .infoinput{
+        background: white;
+        width: 100%;
+    }
+    .info4 h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    .templet p{
+        text-align: center;
+        line-height: 70px;
+        font-size: 20px;
+        color: white;
+       }
+       .templet{
+        width: 100%;
+/*        height: 80px;*/
+        background:gold;
+        border: 1px solid transparent ;
+       }
+       
+        
+}
+@media(max-width:576px){
+    .nav label #toggle{
+        display: block;
+        line-height: 70px;
+        margin-left: 20px;
+
+    }
+}
+    </style>
+	
+</head>
+<body>
+    <div class="container">
+    	<div class="nav">
+    		<div class="navimg"></div>
+            <input type="checkbox" name="" id=check >
+            <label for="check">
+                <i class="fa fa-bars" id="toggle"></i>
+                <i class="fa fa-times" id="cross"></i>
+            </label>
+    		<a href="">
+    			<ul>
+    			<li><i>Home</i></li>
+    			<li><i>About</i></li>
+    			<li><i>Gallary</i></li>
+    			<li><i>Portfolio</i></li>
+    			<li><i>Contact Us</i></li>
+    		</ul>
+    		</a>
+    	</div>
+    <div class="home">
+    	<div class="text">
+    		<div class="content">
+    			<p class="a03">03</p>
+    		<h1 class="drool">Drool</h1>
+    		<h1 class="pet">Pet And Animal</h1>
+    		<p class="lorem">
+    			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    			tempor incididunt 
+    		</p>
+    		<div class="button">
+    			<div class="readmore">Read More <i class="fa-solid fa-location-arrow fa-bounce"></i></div>
+    		<div class="contact">Contact Us</div>
+    		</div>
+    		</div>
+
+    	</div>
+    <div class="dogimg"><center><img src="assets/img/slider-img.png"></center></div>
+    </div>
+    	
+    </div>
+    <div class="aboutus">
+    	<div class="dogicon"></div>
+    	<h1 class="about">About Us</h1>
+    <p class="aboutp"> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,</p>
+    <div class="readmore1"><a href="">Read More <i class="fa-solid fa-location-arrow fa-bounce"></i></a></div>
+    </div>
+    <div class="animation">
+        <div class="box dog">
+            <img src="assets/img/dog.jpg">
+            <h2>Cute Dog</h2>
+            <div class="boxp">
+                <p>It is a long establish fact that a reader will be distract by
+
+            </p>
+            </div>
+        </div>
+        <div class="box bird">
+            <img src="assets/img/bird.jpg">
+            <h2>Birds</h2>
+            <div class="boxp">
+                <p>It is a long establish fact that a reader will be distract by
+
+            </p>
+            </div>
+        </div>
+        <div class="box fish">
+            <img src="assets/img/fish.jpg">
+            <h2>Fish</h2>
+            <div class="boxp">
+                <p>It is a long establish fact that a reader will be distract by
+
+            </p>
+            </div>
+        </div>
+        <div class="box cat">
+            <img src="assets/img/cat.jpg">
+            <h2>Cat Bite</h2>
+            <div class="boxp">
+                <p>It is a long establi fact that a reader will be distract by
+
+            </p>
+            </div>
+        </div>
+    </div>
+    <div class="maincaring">
+        <div class="dogbath">
+            <div class="dogbathimg"><img src="assets/img/pet-img.png"></div>
+        </div>
+        <div class="caringtext">
+            <div class="carecontent">
+                <div class="caredogimg"></div>
+                <h1>Caring for your pets</h1>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+
+                </p>
+                <div class="carereadbutton"><a href="">READ MORE <i class="fa-solid fa-location-arrow fa-bounce"></i></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="choose">
+        <div class="choose1">
+            <div class="chooseimg"></div>
+            <h1>Why Choose Us</h1>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a</p>
+        </div>
+        <div class="choose2">
+            <div class="dd choosedog1"></div>
+            <div class="dd choosedog2"></div>
+            <div class="dd choosedog3"></div>
+        </div>
+        <div class="choose3">
+            <div class="circle">
+                <div class=" cc circle1">
+                    <h4>PET NUTRITIONISTS</h4>
+                </div>
+                <div class=" cc circle2">
+                    <h4>STANDERDS</h4>
+                    
+                </div>
+                <div class=" cc circle3">
+                    <h4>QUALITY & SAFETY</h4>
+                    
+                </div>
+            </div>
+            <div class="circleread">
+            <div class="readmore2"><a href="">READ MORE <i class="fa-solid fa-location-arrow fa-bounce"></i></a></div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="food">
+        <div class="foodtext">
+            <div class="fooddog"></div>
+            <h1>Our Dog Food</h1>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a
+            </p>
+        </div>
+        <div class="foodpacket">
+            <div class=" pp packet1"><img src="assets/img/f1.png"></div>
+            <div class=" pp packet2"><img src="assets/img/f2.png"></div>
+            <div class=" pp packet3"><img src="assets/img/f3.png"></div>
+        </div>
+    </div>
+    <div class="space"></div>
+    <div class="buynow">
+        <div class="bb buy1">
+            <h3>BASIC</h3>
+           <div class="dolar">
+               <div class="h1">$</div>
+           <div class="h2">100</div>
+           </div>
+            <a href="">Buy Now</a>
+        </div>
+        <div class="bb buy1">
+            <h3>MEDIUM</h3>
+           <div class="dolar">
+               <div class="h1">$</div>
+           <div class="h2">200</div>
+           </div>
+            <a href="">Buy Now</a>
+        </div>
+        <div class="bb buy1">
+            <h3>STANDARD</h3>
+           <div class="dolar">
+               <div class="h1">$</div>
+           <div class="h2">300</div>
+           </div>
+            <a href="">Buy Now</a>
+        </div>
+        
+    </div>
+    <div class="customer">
+       <div class="customer1">
+            <div class="customerimg"></div>
+            <h1>What Says Our Customer</h1>
+            <p>It is a long established fact that a reader will be distracted by the</p>
+        </div>
+        <div class="jack">
+            <div class="jackimgborder">
+                <div class="jackimg"><img src="assets/img/client.png"></div>
+            </div>
+            <div class="jacktext">
+                <p class="p">JACK MENGO</p>
+                <p>It is a long established fact that a reader will be distracted by the readable cIt is a long established fact that a reader will be distracted by the readable c
+
+                </p>
+                <div class="comma"></div>
+                
+            </div>
+            <div class="jackslide">
+                    <div class="btn">
+                        <div class="a"><a href=""><i class="fa-solid fa-arrow-right fa-rotate-180"></i></a></div>
+                        <div class="a"><a href=""><i class="fa-solid fa-arrow-right"></i></a></div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="callspace"></div>
+    <div class="callback">
+        <div class="callbackcontent">
+            <div class="calltext">
+                <div class="calldog"></div>
+                <h1>Request A Call Back</h1>
+                <p>It is a long established fact that a reader will be distracted by the</p>
+            </div>
+            <div class="callform">
+                <br>
+                <input type="text" name="" placeholder="  Full Name" size="30"> <br><br><br>
+                <input type="number" name="" placeholder="  Phone Number" maxlength="10"> <br><br><br>
+                <input type="email" name="" placeholder="  Email"><br><br><br>
+                <input class="msg" type="text" name="" placeholder="  Message"><br><br><br>
+            </div>
+           <div class="abc"> <a class="aaa" href="">SEND</a></div>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d178770.47462499677!2d77.89397865729461!3d26.978076396418356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1694860440992!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <div class="info">
+        <div class="contactinfo">
+            <div class="inf info1">
+                <h2>CONTACT INFO</h2>
+                <div class="calling"></div>  <p>+01 1234567890</p><br>
+                <div class="mail"></div>  <p> demo@gmail.com</p>
+            </div>
+            <div class="inf info2">
+                <h2>OPENING HOUSE SHOP</h2>
+                <h3>MONDAY TO FRIDAY</h3>
+                <h4>07:00 AM TO 04:00 PM</h4>
+            </div>
+            <div class="inf info3">
+                <h2>SOCIAL MEDIA</h2>
+                <div class="media">
+                   
+                    <a href=""><div class="mda f"><img src="assets/img/fb.png"></div> </a>
+                    <a href=""><div class="mda t"><img src="assets/img/twitter.png"></div></a>
+                    <a href=""> <div class="mda in"><img src="assets/img/linkedin.png"></div></a>
+                    <a href=""> <div class="mda ins"><img src="assets/img/instagram.png"></div></a>
+                </div>
+            </div>
+            <div class="inf info4">
+                <h2>NEWS LETTER</h2>
+                <input class="infoinput" type="email" name="" placeholder="Enter Your Email">
+                <a href="">SUBSCRIBE</a>
+            </div>
+        </div>
+        <div class="templet">
+            <p>© 2019 All Rights Reserved. Design by Free Html Templates</p>
+        </div>
+    </div>
+
+</body>
+</html>
